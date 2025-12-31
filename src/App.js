@@ -125,7 +125,7 @@ function HomePage() {
           <h2>Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy, request support, please contact us at:<br />
-            <a href="mailto: kvc21102000@gmail.com"> kvc21102000@gmail.com</a><br />
+            <a href="mailto: alexanderhopkins70728352@gmail.com"> alexanderhopkins70728352@gmail.com</a><br />
             <span style={{ display: 'inline-block', marginTop: '10px' }}></span>
           </p>
         </div>
