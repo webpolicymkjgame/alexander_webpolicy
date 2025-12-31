@@ -1,0 +1,406 @@
+/* App.css */
+
+/* Reset and Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1vw, 12px);
+}
+
+.logo-img {
+  height: clamp(35px, 5vw, 45px);
+}
+
+.studio-name {
+  font-size: clamp(18px, 2.5vw, 25px);
+  font-weight: bold;
+  color: #FFA029;
+}
+
+.nav {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-link {
+  color: #FFA029;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #FFA029;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FFA029, #f57632);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-top: 50px;
+  max-height: 500px;
+}
+
+/* Mission Section */
+.mission {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fef8f0 0%, #fff 100%);
+}
+
+.mission-title {
+  color: #FFA029;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.mission-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat-card {
+  background: #fff;
+  border: 3px solid #FFA029;
+  border-radius: 24px;
+  padding: 50px 40px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(204,138,0,0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(204, 138, 0, 0.2);
+  border-color: #f57632;
+}
+
+.stat-icon {
+  color: #FFA029;
+  margin: 0 auto 24px;
+  width: fit-content;
+  padding: 16px;
+  background: rgba(204, 138, 0, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  background: rgba(204, 138, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.stat-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke-width: 2.5;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 20px 0 12px;
+  background: linear-gradient(135deg, #FFA029 0%, #f57632 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.highlight-title {
+  color: #FFA029;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text-container {
+  flex: 1 1 25%;
+  min-width: 500px;
+}
+
+.about-img-container {
+  flex: 1 1 20%;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Games Section */
+.games {
+  padding: 60px 20px;
+  background-color: #fdf9f6;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+.game-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(204,138,0,0.15);
+}
+
+game-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.game-info {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.btn-google-play {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFA029;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn-google-play:hover {
+  background-color: #3367d6;
+}
+
+.google-play-icon {
+  height: 20px;
+  width: auto;
+  color: #FFA029
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact a {
+  color: #FFA029;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 25px 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.studio-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFA029;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-title, .highlight-title {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text-container, .about-img-container {
+    min-width: 100%;
+  }
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
