@@ -60,7 +60,7 @@ img {
 .studio-name {
   font-size: clamp(18px, 2.5vw, 25px);
   font-weight: bold;
-  color: #FFA029;
+  color: #C9A227;
 }
 
 .nav {
@@ -71,7 +71,7 @@ img {
 }
 
 .nav-link {
-  color: #FFA029;
+  color: #C9A227;
   font-weight: 700;
   text-decoration: none;
   font-size: clamp(0.85rem, 1vw, 0.95rem);
@@ -84,7 +84,7 @@ img {
 }
 
 .nav-link:hover {
-  color: #FFA029;
+  color: #C9A227;
 }
 
 .nav-link::after {
@@ -94,7 +94,7 @@ img {
   left: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #FFA029, #f57632);
+  background: linear-gradient(90deg, #C9A227, #f57632);
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -118,7 +118,7 @@ img {
 }
 
 .mission-title {
-  color: #FFA029;
+  color: #C9A227;
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 24px;
@@ -146,7 +146,7 @@ img {
 
 .stat-card {
   background: #fff;
-  border: 3px solid #FFA029;
+  border: 3px solid #C9A227;
   border-radius: 24px;
   padding: 50px 40px;
   text-align: center;
@@ -177,7 +177,7 @@ img {
 }
 
 .stat-icon {
-  color: #FFA029;
+  color: #C9A227;
   margin: 0 auto 24px;
   width: fit-content;
   padding: 16px;
@@ -201,7 +201,7 @@ img {
   font-size: 3.5rem;
   font-weight: 800;
   margin: 20px 0 12px;
-  background: linear-gradient(135deg, #FFA029 0%, #f57632 100%);
+  background: linear-gradient(135deg, #C9A227 0%, #f57632 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -223,7 +223,7 @@ img {
 }
 
 .highlight-title {
-  color: #FFA029;
+  color: #C9A227;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -332,7 +332,7 @@ game-card img {
 .btn-google-play {
   display: inline-flex;
   align-items: center;
-  background-color: #FFA029;
+  background-color: #C9A227;
   color: white;
   padding: 8px 12px;
   border-radius: 6px;
@@ -349,7 +349,7 @@ game-card img {
 .google-play-icon {
   height: 20px;
   width: auto;
-  color: #FFA029
+  color: #C9A227
 }
 
 /* Contact Section */
@@ -360,7 +360,7 @@ game-card img {
 }
 
 .contact a {
-  color: #FFA029;
+  color: #C9A227;
   text-decoration: none;
   font-weight: bold;
 }
@@ -383,7 +383,7 @@ game-card img {
 .studio-name {
   font-size: 25px;
   font-weight: bold;
-  color: #FFA029;
+  color: #C9A227;
 }
 
 /* Responsive */
